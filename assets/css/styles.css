@@ -2,3 +2,151 @@
 
 @import url('./variable.css');
 
+.main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.top__title{
+    color: var(--Dark-Desaturated-Blue);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.top__para{
+    color: var(--Grayish-Blue);
+}
+
+.card{
+    background: var(--White);
+    border-radius: 5px;
+    padding: 2rem;
+    width: 500px;
+
+    box-shadow: 1px 8px 32px 0px rgba(0,0,0,0.08);
+-webkit-box-shadow: 1px 8px 32px 0px rgba(0,0,0,0.08);
+-moz-box-shadow: 1px 8px 32px 0px rgba(0,0,0,0.08);
+}
+
+
+.card__top{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.card__text__left{
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.card__text__right{
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.card__price{
+    color: var(--Dark-Desaturated-Blue);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.container__toggle{
+    align-items: center;
+    color: var(--Grayish-Blue);
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 800;
+    justify-content: center;
+}
+
+#container{
+    background: var(--Light-Grayish-Blue);
+    position: relative;
+    width: 45px;
+    height: 20px;
+    box-shadow: inset 4px 4px 0px var(--Light-Grayish-Blue),
+                inset -4px -4px 0px var(--Light-Grayish-Blue);
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+#container:hover{
+    background: var(--Soft-Cyan);
+    position: relative;
+    width: 45px;
+    height: 20px;
+    box-shadow: inset 4px 4px 0px var(--Soft-Cyan),
+                inset -4px -4px 0px var(--Soft-Cyan);
+}
+
+.toggle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: scale(.7);
+    background: var(--Very-Pale-Blue);
+    border-radius: 25px;
+}
+
+.discount{
+    background: var(--Light-Grayish-Red);
+    border-radius: 1rem;
+    color: var(--Light-Red);
+    font-size: 0.9rem;
+    padding: 0.1rem 0.5rem;
+}
+
+
+.bottom{
+    align-items: center;
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.bottom__list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.bottom__list__item img{
+    margin-right: 0.5rem;
+}
+
+.botton__button{
+    border: none;
+    border-radius: 1.2rem;
+    background: var(--Dark-Desaturated-Blue);
+    color: var(--Light-Grayish-Blue);
+    cursor: pointer;
+    font-family: var(--ff-marope);
+    padding: 0.6rem 2.2rem;
+}
+
+.botton__button:hover{
+    color: var(--White);
+}
+
